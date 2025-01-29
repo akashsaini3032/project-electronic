@@ -6,6 +6,10 @@
     
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* NAVBAR CSS SAME FOR ALL FILE*/
 /* Desktop Navbar */
 
