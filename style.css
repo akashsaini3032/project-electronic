@@ -1,0 +1,1079 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+    
+}
+
+/* NAVBAR CSS SAME FOR ALL FILE*/
+/* Desktop Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+
+.navbar .logo img {
+   max-height: 50px;
+}
+
+
+
+.navbar .menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+#click{
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        
+        
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+    #click:checked~.navbar .menu{
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .icons {
+        display: none;
+    }
+}
+
+
+/*tablet navbar*/
+@media (min-width: 426px) and (max-width: 768px) {
+    .navbar {
+        padding: 8px 15px; 
+    }
+
+    .navbar .logo img {
+        max-height: 40px; 
+    }
+
+    .navbar .menu ul {
+        gap: 20px; 
+        font-size: 18px; 
+    }
+
+    .navbar .icons {
+        gap: 40px; 
+        font-size: 40px; 
+    }
+}
+
+
+
+
+
+
+
+
+/* HOME PAGE CSS*/
+/* BANNER1*/
+
+.heading{
+    padding-left: 30px;
+}
+
+.banner{
+    
+        background-color: rgba(128, 128, 128, 0.092);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    
+        
+    
+} 
+
+
+.banner div{
+    gap: 10px;
+}
+
+
+.banner div h3{
+    color: red;
+}
+
+.banner div h1{
+
+    font-size: 50px;
+}
+
+.banner div button{
+    padding: 12px 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    size: 1500px;
+}
+
+
+@media (max-width: 768px){
+    .banner{
+    
+        padding-top: 30px;
+        padding-left: 20px;      
+    
+} 
+
+}
+
+/* TRENDING CATEGORIES*/
+
+
+.trending{
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+
+} 
+
+
+
+
+/* PROMO SECTION 2DIV*/
+/* promo section*/
+
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    gap: 60px; 
+}
+
+.promo-section div{
+    color: black;
+    font-size: 15px;
+}
+
+.promo-section div p{
+    color: rgba(0, 0, 0, 0.821);
+    font-size: 20px;
+}
+
+.promo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.promo-item:hover {
+    transform: scale(1.05); 
+}
+
+.camera {
+    background-image: url(promo1.webp); 
+}
+
+.games {
+    background-image: url(promo2.webp); 
+}
+
+button {
+    background-color: rgba(231, 76, 60, 1)
+    ; 
+    color: rgba(255, 255, 255, 1)
+    ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover {
+    background-color: rgba(214, 44, 26, 1); 
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px){
+    .promo-section{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+}
+
+/* LATEST PRODUCT*/
+/* latest section css*/ 
+.latest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: red;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: rgba(136, 136, 136, 1);
+    margin-left: 10px;
+}
+
+
+
+
+/* POPULAR PRODUCT SECTION*/
+.popular {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popular div {
+    border: 2px solid gray;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.079);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.popular div:hover {
+    transform: scale(1.05);
+}
+
+.popular img {
+    max-width: 100%;
+    height: auto;
+}
+
+.popular h5 {
+    text-decoration: line-through;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* BANNER LAST*/
+/* Banner last*/
+.bannerlast {
+    background-color: rgba(128, 128, 128, 0.164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.bannerlast div h3 {
+    color: red;
+}
+
+.bannerlast div h1 {
+    font-size: 50px;
+}
+
+.bannerlast div button {
+    padding: 14px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .bannerlast{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .bannerlast div img{
+        padding-right: 60px;
+    }
+    
+}
+
+
+
+
+/* BLOG AND EVENT*/
+/* BlOG and EVENTS*/
+.mainSection {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.childDiv {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.childDiv:hover {
+    transform: scale(1.05); 
+}
+
+.childDiv img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 15px;
+}
+
+.date {
+    color: rgba(136, 136, 136, 1);
+    font-size: 14px;
+    margin: 0;
+}
+
+.title {
+    color: rgba(51, 51, 51, 1);
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+
+
+
+
+
+/* BIG DISCOUNT BANNER*/
+.promosectionh {
+    background-image: url('h3.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.promosectionh:hover {
+    transform: scale(1.05);
+}
+
+.promoContent {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.discount {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.productName {
+    font-size: 24px;
+    color: black;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 28px;
+    color: red;
+    margin: 10px 0;
+}
+
+.shopNow {
+    background-color: rgba(255, 87, 34, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shopNow:hover {
+    background-color: rgba(230, 74, 25, 1) ;
+
+
+}
+
+
+/* LAST SECTION*/
+
+.containerh {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.section {
+    text-align: center;
+    max-width: 200px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1)    ;
+}
+
+@media (max-width: 768px){
+
+}
+
+
+/* ELECTRONIC PAGE CSS*/
+
+.econtainer{
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+}
+
+
+
+.sidebar{
+    
+    background-color: rgba(128, 128, 128, 0.077);
+    
+    width: 220px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+} 
+
+
+
+
+.container {
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+} 
+
+.container div{
+    border: 2px solid gray;
+    padding: 70px;
+
+    width: 200px;
+    transition: transform 0.3s ease;
+    
+
+    
+}
+
+.container div:hover {
+    transform: scale(1.05); 
+}
+
+
+.container div h4{
+    color: red;
+    
+
+    
+}
+
+
+
+/* BLOG PAGE CSS*/
+
+.blog{
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+}
+
+
+
+.blogside{
+    
+    background-color: rgba(128, 128, 128, 0.077);
+    
+    width: 220px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+} 
+
+
+
+
+.blogcontent {
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+} 
+
+.blogcontent div{
+    
+    
+        border: 2px solid gray;
+        background-color: rgba(128, 128, 128, 0.079);
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: transform 0.3s;
+    
+
+    
+}
+.blogcontent div:hover {
+    transform: scale(1.05);
+}
+
+.blogcontent div h4{
+    color: red;
+    
+
+    
+}
+
+.blogcontent p {
+    font-size: 16px;
+    color: #555;
+}
+.blogcontent h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+
+.read-more {
+    display: inline-block;
+    color: rgba(255, 59, 48, 1)    ;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* PAGE PAGE CSS*/
+
+/* First Banner css*/
+.pbanner {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pbanner div {
+    border: 2px solid gray;
+    padding: 70px;
+    width: 200px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.pbanner div:hover {
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 255, 1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/*SECOND BANNER CSS*/
+
+.pteam {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pteam div {
+    border: 2px solid gray;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center; 
+}
+
+.pteam div:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 123, 255, 1); 
+}
+
+
+.pteam h3 {
+    font-size: 1.5em;
+    color: rgba(51, 51, 51, 1);
+    margin-top: 15px;
+}
+
+.pteam h4 {
+    font-size: 1.2em;
+    color: rgba(119, 119, 119, 1);
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+
+
+/*Fourth BANNER CSS*/
+.clients {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.clients h2 {
+    font-size: 2em;
+}
+
+.clients p {
+    font-size: 1em;
+    color: gray;
+}
+
+.clients .testimonialCard {
+    background-color: rgba(211, 211, 211, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s;
+}
+
+.clients .testimonialCard:hover {
+    transform: scale(1.05);
+}
+
+.clients .quoteIcon {
+    font-size: 2em;
+    color: pink;
+}
+
+.clients h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.clients .author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clients .authorTitle {
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+
+/*Third BANNER CSS*/
+
+.pageform{
+    background-color: rgba(128, 128, 128, 0.116);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    padding-right: 80px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+
+}
+
+.form1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    
+}
+
+.form1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(128, 128, 128);
+}
+
+.form1 input,
+.form1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form1 input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.form1 input[type="submit"]:hover {
+    background-color: red;
+}
+
+
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contactitem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contactitem i {
+    font-size: 24px;
+    color: rgba(0, 123, 255, 1); 
+}
+
+.contactitem div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactitem p {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1); 
+}
+
+
+
+
+
+
+/* CONTACT PAGE CSS*/
+
+.pcontact{
+    
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+
+} 
+
+
+
+.pcontact div{
+    border: 2px solid white;
+    padding: 70px;
+
+    width: 200px;
+    
+
+    
+}
+
+
+.form2 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.form1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(128, 128, 128);
+}
+
+.form2 input,
+.form2 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form2 input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.form2 input[type="submit"]:hover {
+    background-color: red;
+}
+
+
+/* FOOTER CSS*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 1)    ;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+.footerColumn {
+    flex: 1;
+    margin: 0 10px;
+}
+.footerColumn h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+.footerColumn p, .footerColumn a {
+    margin-bottom: 10px;
+    color: rgba(51, 51, 51, 1)    ;
+    text-decoration: none;
+}
+.footerColumn a:hover {
+    text-decoration: underline;
+}
+.footerBottom {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(232, 232, 232, 1)    ;
+    font-size: 14px;
+    color: rgba(153, 153, 153, 1)   ;
+}
+.appButtons img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+
+.paymentOptions img {
+    width: 400px;
+    margin-top: 10px;
+}
