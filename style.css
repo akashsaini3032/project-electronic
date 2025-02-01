@@ -58,7 +58,14 @@ body{
 }
 
 /* Mobile Navbar */
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+      }
+    body{
+        overflow-x: hidden;
+    }
+    
     .navbar {
         justify-content: space-between;
         position: relative;
