@@ -137,7 +137,7 @@ body{
 /* BANNER1*/
 
 .heading{
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .banner{
@@ -157,7 +157,7 @@ body{
 
 
 .banner div{
-    gap: 10px;
+    gap: 40px;
 }
 
 
@@ -207,6 +207,10 @@ body{
 
 } 
 
+.trending div h3{
+    padding-left: 30%;
+}
+
 
 
 
@@ -224,11 +228,14 @@ body{
 .promo-section div{
     color: black;
     font-size: 15px;
+    gap: 20px;
+    padding-bottom: 90px;
 }
 
 .promo-section div p{
-    color: rgba(0, 0, 0, 0.821);
-    font-size: 20px;
+    color: black;
+    font-size: 30px;
+    
 }
 
 .promo-item {
@@ -246,10 +253,12 @@ body{
     background-position: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease; 
+    
 }
 
 .promo-item:hover {
     transform: scale(1.05); 
+    
 }
 
 .camera {
@@ -261,7 +270,7 @@ body{
 }
 
 button {
-    background-color: rgba(231, 76, 60, 1)
+    background-color: rgb(20, 231, 16)
     ; 
     color: rgba(255, 255, 255, 1)
     ;
@@ -380,10 +389,7 @@ button:hover {
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-}
-
-.bannerlast div h3 {
-    color: red;
+    padding-top: 40px;
 }
 
 .bannerlast div h1 {
